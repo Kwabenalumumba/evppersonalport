@@ -1,0 +1,111 @@
+/*....
+
+NavBar
+
+....*/
+
+.nav {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+
+}
+
+/*....
+
+Hero Section
+
+....*/
+
+/*.... This is the settings for the imagebox/hero background image ....*/
+
+.aspect-ratio-box {
+    positive: relative;
+    border: solid 12px;
+}
+
+.aspect-ratio-box-inside {      
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+}
+
+@media (max-width: 992px) {
+.aspect-ratio-box {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+}
+
+@media (max-width: 992px) {
+.aspect-ratio-box-inside {
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
+}
+}
+
+@media (max-width: 768px) {
+.aspect-ratio-box {
+  margin: 0 auto;
+}
+}
+
+@media (max-width: 768px) {
+  .aspect-ratio-box-inside {
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+}
+}
+
+.herohead {
+
+    display: inline-block;
+    text-align: center;
+    font-family: Arial Narrow, sans-serif;	
+    width: 100%;
+    height: 100%;
+}
+
+/*....
+
+Portfolio
+
+....*/
+
+.container-fluid {
+
+}
+
+.porthead {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-style: 
+}
+.description {
+    display: -webkit-box;  /* using line clamp */
+font-weight: 400;
+line-height: 1.5rem;
+overflow: hidden;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+text-overflow: ellipses;
+}
+
+/*....
+
+Section Three
+
+....*/
+
+
+/*....
+
+Footer
+
+....*/
