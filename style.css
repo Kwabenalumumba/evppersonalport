@@ -1,111 +1,211 @@
-/*....
+.navbar {
+  background-color: rgba(255, 166, 1, 0.2);
+  font-size: 1rem;
+  padding-right: 50px;
+}
 
-NavBar
+@media (max-width: 576px) {
+.navbar {
+  background-color: rgba(255, 166, 1, 0.2);
+  margin-bottom: 30px;
+  padding-right: 50px;
+ }
+}
 
-....*/
+.nav-item, .nav-link {
+  color: white;
+}
 
-.nav {
+.navbar-toggler-icon,
+.navbar-toggler {
+  border-color: #fff;
+  text-decoration-color: #fff;
+  border-radius: 1px;
+  background-color: transparent;
+}
+
+.a.dropdown-menu {
+  background-color: coral;
+  border-color: white;
+  color: white;
+}
+
+@media (max-width: 576px) {
+ .dropdown-menu {
+  background-color: transparent;
+  color: green;
+  font-size: 1em;
+  line-height: 1em;
+  padding-right: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .a.dropdown-item {
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+  line-height: 1em;
+  padding-right: 1rem;
+  }  
+}
+
+a.dropdown-item {
+  background-color: rgb(255, 127, 80);
+  color: white;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-right: 1rem;
+}
+
+.link-wrap {
+  background: #333;
+  height: 0;
+  max-width: 1200px;
+  overflow: hidden;
   position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-
-}
-
-/*....
-
-Hero Section
-
-....*/
-
-/*.... This is the settings for the imagebox/hero background image ....*/
-
-.aspect-ratio-box {
-    positive: relative;
-    border: solid 12px;
-}
-
-.aspect-ratio-box-inside {      
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  padding: 10px;
-}
-
-@media (max-width: 992px) {
-.aspect-ratio-box {
+  top: 53px;
+  transition: height 0.3s ease-out;
   width: 100%;
-  height: 100%;
-  top: 0;
-}
 }
 
-@media (max-width: 992px) {
-.aspect-ratio-box-inside {
+.heroimage {
   width: 100%;
-  height: 100%;
+  height: 600px;
+  background: url(images/DSC00288.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: local, scroll;
+  border-bottom: solid 8px rgb (22, 255, 1);
+}
+
+.img-fluid {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.head {
+  font-family: hotel-open,sans-serif;
+  font-weight: 200;
+  font-style: normal; 
+  font-size: 3.5rem;
   margin: auto 0;
-}
-}
+  padding-top: 20px;
+  line-height: 1em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 5px;
 
-@media (max-width: 768px) {
-.aspect-ratio-box {
-  margin: 0 auto;
-}
-}
-
-@media (max-width: 768px) {
-  .aspect-ratio-box-inside {
-    width: 100%;
-    height: 100%;
-    margin: auto 0;
-}
 }
 
-.herohead {
-
-    display: inline-block;
-    text-align: center;
-    font-family: Arial Narrow, sans-serif;	
-    width: 100%;
-    height: 100%;
+p.subhead {
+  font-family: apotek,sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: rgb(63, 34, 0);
+  margin: 10px, 0, 0, 15px;
 }
 
-/*....
-
-Portfolio
-
-....*/
+hr {
+  border-width: thin;
+  border-color: #fff;
+  width: 450px;
+}
 
 .container-fluid {
-
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-.porthead {
-    display: block;
-    text-align: center;
+.about {
+    top: 0px;
+    left: 0px;
+    padding: 40px;
     width: 100%;
-    font-style: 
 }
-.description {
+
+.article {
+  display: -webkit-box;  /* using line clamp */
+  flex-wrap: wrap;
+  padding: 40px, 40px, 0px, 0px;
+  width: 100%;
+  line-height: 2rem;
+  overflow: hidden;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipses;
+ }
+}
+
+@media (max-width: 768px) {
+  .article {
     display: -webkit-box;  /* using line clamp */
-font-weight: 400;
-line-height: 1.5rem;
-overflow: hidden;
--webkit-line-clamp: 3;
--webkit-box-orient: vertical;
-text-overflow: ellipses;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipses;
+  }
+} 
+
+@media (max-width: 576px) {
+  .article {
+    display: -webkit-box;  /* using line clamp */
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipses;
+  }
+} 
+
+.portfolio {
+  font-family: archive, sans-serif;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 100;
 }
 
-/*....
+.scrollableRow {
+  overflow-x: scroll;
+}
 
-Section Three
+.scrollableRow > [class*=col-] {
+}
 
-....*/
+.scrollableRow .filler {
+  min-width: 18px;
+}
 
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  }
 
-/*....
+.description {
+  display: block;
+  background-color: coral;
+  text-align: center;
+  padding: 5px, 0px, 0px, 7px;
+  height: 50px;
+}
 
-Footer
-
-....*/
+.icons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  height: 80px;
+}

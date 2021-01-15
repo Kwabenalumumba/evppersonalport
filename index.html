@@ -13,9 +13,9 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./style.css">
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -25,107 +25,176 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!-- Font Archive -->
+  <link rel="stylesheet" href="https://www.fontfabric.com/fonts/archive">
+  <link rel="stylesheet" href="https://use.typekit.net/xgc6qbb.css">
+
+
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <title>evppersonalport</title>
 
 </head>
+
 <body>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown <span class="pl-1 angle d-inline-block"></span></small>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Search</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <hr />
+  <!--
 
-    <div class="hero">
-    <div class="aspect-ratio-box mb-2 rounded">
-        <img src="./images/B0000596.JPG" class="img-fluid" alt="Responsive image" width="100%" height="100%">
-        <div class="aspect-ratio-box-inside text-center">
-          <p class="follow">BOT</p>
-          <hr />
-          <p class="follow-subhead">FRONT-END WEB DEVELOPER</p>
-          <img src="./images/logos/icons8-linkedin-50-2.png" class=img-fluid attribute="logo" height="70" width="70
-              "></a>
-            <img src="./images/logos/icons8-linkedin-50-2.png" class=img-fluid attribute="logo" height="70" width="70
-              "></a>
+  Section Structure
+
+  -->
+
+  <div class="heroimage">
+    <div class="row">
+      <div class="col-sm-12">
+  
+        <!--
+            
+              NavBar
+            
+              -->
+  
+        <nav class="navbar navbar-expand-lg mt-4">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto pr-3">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Contact<span class="pl-1 angle d-inline-block"></span></small>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="mailto:webmaster@example.com">Email</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Projects<span class="pl-1 angle d-inline-block"></span></small>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" background-color="transparent">
+                  <a class="dropdown-item" href="#">10-10-50</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">538 A Day</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Doc Bass</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-search-location"></i>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  
+    <!--
+  
+    Hero Section
+  
+    -->
+    <div class="head">BORN<span style="font-size: smaller"> on</span><br> TUESDAY</p>
+      <p class="subhead"><span style="color: white; background-color: coral; padding-left: 3px">Upskilled</span><br> Front-End
+        Web Developer</p>
+    </div>
+    
+    
+      <div class="icons">
+      <div class="row d-flex justify-content-around flex-grow-1 mt-5 mx-auto">
+          <a href="#"><img src="./icons/github.png" class=img-fluid attribute="logo" height="60" width="60"></a>
+          <a href="#"><img src="./icons/linkedin.png" class=img-fluid attribute="logo" height="60" width="60"></a>
         </div>
       </div>
     </div>
+  
 
+  <!--
 
-<iv class="container-fluid bg-light">
-<h2 class="porthead mt-4">PORTFOLIO</h2>
-  <div class="row">
-    <div class="col-12 col-md-4 mb-3 mx-auto d-block col-lg-3">
-      <div class="news-image">
-        <img src="./images/_CUB8639.jpg" class="img-fluid rounded float-left" alt="Responsive image">
-        <p><H2 mt-4>Project I</H2><br>
-        <h4>10-10-50.org</h4><br>
+  About Section
 
-        <p class="description mb-4"><i>Airbnb and co-founders Brian Chesky, Joe Gebbia and Nate Blecharczyk commit 400,000
-          Airbnb shares and $6M
-          to new community-focused non-profit.</i></p>
+  -->
+
+<div class="container-fluid d-block flex-wrap bg-light no-gutters">
+<div class="row">
+<div class="col-12 offset-sm-1 col-sm-5">
+<img src="./images/me.png" class="img-fluid" alt="Responsive image" width="345" height="473">
+</div>
+<div class="col-12 col-sm-6 mt-4">
+  <div class="article">
+<h4>Eric (Kwabena) Peterson (Lumumba)</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis interdum eros pellentesque faucibus. Sed
+        a hendrerit nunc. Duis maximus, ligula ornare auctor viverra, augue est scelerisque lectus, ut placerat libero
+        nibh vel dui. Duis aliquam, mi at suscipit lacinia, dui erat egestas felis, sed facilisis sem ligula eget purus.
+        In in ipsum est. Vivamus diam lacus, posuere quis nibh ac, scelerisque tempor nulla. Integer vel vehicula
+        turpis. Proin dictum ac nulla eu dictum. In hac habitasse platea dictumst. Cras pretium neque et purus maximus,
+        a vestibulum elit lacinia. Sed eu aliquet orci. Mauris vel tempus nunc. Morbi varius tellus eu tristique aliquet. Maecenas nisl erat,
+        dictum id neque vitae, interdum euismod orci. Aenean vel justo vestibulum, sollicitudin nisl sit amet, ornare
+        massa. Fusce fringilla orci ac ligula mattis sagittis. Nam sagittis ligula ut blandit congue. Cras sapien nunc,
+        aliquam sit</p>
       </div>
     </div>
-
-    <div class="col-12 col-md-4 mb-3 mx-auto d-block col-lg-3">
-      <div class="news-image">
-        <img src="./images/_CUB8639.jpg" class="img-fluid rounded float-left" alt="Responsive image">
-        <p><H2 mt-4>Project II</H2><br>
-        <h4>Why We Read</h4><br>
-        <p class="description mb-4"><i>Airbnb and co-founders Brian Chesky, Joe Gebbia and Nate Blecharczyk commit 400,000
-          Airbnb shares and $6M
-          to new community-focused non-profit.</i></p>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-4 mb-3 mx-auto d-block col-lg-3">
-      <div class="news-image">
-        <img src="./images/_CUB8639.jpg" class="img-fluid rounded float-left" alt="Responsive image">
-        <p><H2 mt-4>Project III</H2><br>
-            <h4>Wow About Wildlife</h4><br>
-        <p class="description mb-4"><i>Airbnb and co-founders Brian Chesky, Joe Gebbia and Nate Blecharczyk commit 400,000
-          Airbnb shares and $6M
-          to new community-focused non-profit.</i></p>
-      </div>
-    </div>
-    </div>
-    </div>
-
-<div class="sectionthree">
-        
+</div>
 </div>
 
-<div class="footer">
-        
+       <!--
+
+  Upskill Path
+
+  -->
+
+  <div class="upskill mt-4">
+          <a href="#"><img src="./images/upskillpath.jpg" class="img-fluid" alt="Responsive image"></a>
+          </div>
+
+       <!--
+
+  Portfolio
+
+  -->
+
+<p class="subhead mt-4">Portfolio</p>
+<div class="row">
+<div class="col-sm-12 col-md-4 ">
+      <a href="#"><img src="./images/B0000596.jpg" class="img-fluid" alt="Responsive image"></a>
+      <div class="description"><h4>Feature 1</h4></div>
 </div>
+<div class="col-sm-12 col-md-4">
+      <a href="#"><img src="./images/B0000596.jpg" class="img-fluid" alt="Responsive image"></a>
+      <div class="description"><h4>Feature 2</h4></div>
+</div>
+<div class="col-sm-12 col-md-4">
+      <a href="#"><img src="./images/B0000596.jpg" class="img-fluid" alt="Responsive image"></a>
+      <div class="description"><h4>Feature 3</h4></div>
+</div>
+    </div>
+
+  
+    <div class="footer ml-4 mt-4">
+      <p class="copyright">© 2020 Eric V. Peterson, All rights reserved.
+          <span style="display: inilne-block; width: 10px;"></span> &#183 <span
+            style="display: inilne-block; width: 10px;"></span>
+            <a href="mailto:webmaster@example.com">ericvincentpeterson@gmail.com</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  
+  
+  
 
 </body>
 </html>
